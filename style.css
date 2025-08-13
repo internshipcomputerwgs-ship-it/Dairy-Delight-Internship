@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fff8f0;
+  color: #333;
+}
+
+header {
+  background-color: #ffcad4;
+  color: #222;
+  padding: 20px;
+  text-align: center;
+  font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #444;
+}
+
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+.banner {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cards {
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffe5ec;
+  padding: 15px 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Slider Styles */
+.slider {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  border-radius: 12px;
+}
+
+/* Animation */
+.slide.active {
+  display: block;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+#trends {
+  text-align: center;
+}
+
+#trends ul, 
+#trends ol {
+  list-style-position: inside; /* keeps bullet points aligned */
+  padding-left: 0;
+}
+
+.trend-box {
+  background-color: #fff0f5;
+  padding: 15px;
+  margin: 10px auto; /* centers the box */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* keeps them nicely sized */
+}
+#flavor-recommender {
+  text-align: center;
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#flavor-recommender input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#flavor-recommender button {
+  padding: 8px 15px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#flavor-recommender button:hover {
+  background-color: #ff1493;
+}
+
